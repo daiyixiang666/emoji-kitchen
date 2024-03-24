@@ -51,7 +51,7 @@ Can just follow the code in **inference_inpainting.ipynb** they are based on dif
 ![result](image/002.png)
 
 ### 3. Comparsion between methods
-![result]([image/003.png](https://github.com/daiyixiang666/emoji-kitchen/blob/main/image/003.png))
+![img](image/003.png)
 ## TODO
 
 - [x] Some Comparision with differen methods
