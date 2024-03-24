@@ -48,32 +48,10 @@ accelerate launch train_dreambooth_lora_sdxl.py \
 
 ### 2. Inpainting using LoRA
 Can just follow the code in **inference_inpainting.ipynb** they are based on diffuser and are very easy to understand.
-### 3. Inference
-
-```python
-import torch
-from diffusers import StableDiffusionXLPipeline
-from ziplora_pytorch.utils import insert_ziplora_to_unet
-
-pipeline = StableDiffusionXLPipeline.from_pretrained(pretrained_model_name_or_path)
-pipeline.unet = insert_ziplora_to_unet(pipeline.unet, ziplora_name_or_path)
-pipeline.to(device="cuda", dtype=torch.float16)
-image = pipeline(prompt=prompt).images[0]
-image.save("out.png")
-```
-
-Also, you can quickly interact with your ziplora by using gradio.
-```bash
-export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
-export ZIPLORA_PATH="..."
-
-python inference.py --pretrained_model_name_or_path=$MODEL_NAME --ziplora_name_or_path=$ZIPLORA_PATH 
-```
+![result](image/002.png)
 
 
 ## TODO
 
-- [x] super quick instruction for training each loras
-- [x] ZipLoRA (training)
-- [x] ZipLoRA (inference)
-- [ ] Pre-optimization lora weights 
+- [x] Some Comparision with differen methods
+- [ ] Thinking of Method Two
