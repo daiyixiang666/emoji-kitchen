@@ -50,6 +50,7 @@ accelerate launch train_dreambooth_lora_sdxl.py \
 Can just follow the code in **inference_inpainting.ipynb** they are based on diffuser and are very easy to understand.
 ![result](image/002.png)
 
+### 3. Comparsion between methods
 
 ## TODO
 
