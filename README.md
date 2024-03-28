@@ -49,6 +49,7 @@ accelerate launch train_dreambooth_lora_sdxl.py \
 ### 2. Inpainting using LoRA
 Can just follow the code in **inference_inpainting.ipynb** they are based on diffuser and are very easy to understand.
 ![result](image/002.png)
+![result](image/004.png)
 
 ### 3. Comparsion between methods
 ![img](image/003.png)
