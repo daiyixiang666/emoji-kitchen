@@ -55,5 +55,11 @@ Can just follow the code in **inference_inpainting.ipynb** they are based on dif
 ![img](image/003.png)
 ## TODO
 
+## Method Two: Naive Interpolation
+<div style="display: flex; justify-content:  space-between; gap: 10px;">
+  <img src="image/out_0_1.gif" alt="GIF 1 description" width="300" height="300"> 
+  <img src="image/out_best2.gif" alt="GIF 2 description" width="300" height="300">
+</div>
+
 - [x] Some Comparision with differen methods
-- [ ] Thinking of Method Two
+- [ ] Thinking of Method Three
