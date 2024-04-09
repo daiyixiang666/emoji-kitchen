@@ -62,7 +62,7 @@ Can just follow the code in **inference_inpainting.ipynb** they are based on dif
 </div>
 
 ## Method Three: Interpolation plus extra control in the loss function
-$L = \mathbb{E}_{x_0,\epsilon\sim\mathcal{N}(0,I),c,t}\left[\|\epsilon - \epsilon_{\theta}(x_t,c,t)\|^2\right] + \|f(x_{0a}) - Interpolation(f(x_{0a1},f(x_{0a2})))\|^2 $
+![result](image/006.png)
 
 ![result](image/005.png)
 <div style="display: flex; justify-content:  space-between; gap: 10px;">
