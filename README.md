@@ -61,5 +61,12 @@ Can just follow the code in **inference_inpainting.ipynb** they are based on dif
   <img src="image/out_best2.gif" alt="GIF 2 description" width="300" height="300">
 </div>
 
+## Method Three: Interpolation plus extra control in the loss function
+$L = \mathbb{E}_{x_0,\epsilon\sim\mathcal{N}(0,I),c,t}\left[\|\epsilon - \epsilon_{\theta}(x_t,c,t)\|^2\right] + \|f(x_{0a}) - Interpolation(f(x_{0a1},f(x_{0a2})))\|^2 $
+
+![result](image/005.png)
+<div style="display: flex; justify-content:  space-between; gap: 10px;">
+  <img src="image/out_0_0.gif" alt="GIF 1 description" width="300" height="300">
+</div>
 - [x] Some Comparision with differen methods
-- [ ] Thinking of Method Three
+- [ ] Modified of Method Three
